@@ -8,11 +8,12 @@ permalink: /
 
 # Microsoft KnowledgeBase Archive
 
-This is a static archive of Microsoft KnowledgeBase articles.  There is no search functionality yet,
-so you must browse by product.
+This is a static archive of Microsoft KnowledgeBase articles.
+
+There is no search functionality yet, so you must browse by product.
 
 See this [PCjs](https://www.pcjs.org) [blog post](https://www.pcjs.org/blog/2017/10/13/) on the
-the frustration that inspired this archive.
+frustration that inspired this archive.
 
 {% endcomment %}
 
