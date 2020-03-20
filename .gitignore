@@ -1,6 +1,6 @@
-.idea/
-.history/
 .DS_Store
+.history/
+.idea/
 .vscode/
 node_modules/
 tmp/

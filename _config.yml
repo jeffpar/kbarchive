@@ -7,3 +7,6 @@ title: "KnowledgeBase Archive"
 description: "An Archive of Early Microsoft KnowledgeBase Articles"
 theme: jekyll-theme-tactile
 exclude: ["node_modules","tmp","txt","Gemfile*","package*.json","scripts","*.sh"]
+google_analytics: UA-49658648-3
+plugins:
+  - jekyll-sitemap
